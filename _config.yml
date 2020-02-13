@@ -1,1 +1,8 @@
-theme: jekyll-theme-slate
+ themes:
+        - the-authority
+        - colibri-wp
+        - library-books
+        - lawyer-gravity
+        - corporate-gravity
+plugins:
+        - wpforms-lite   
