@@ -1,8 +1,1 @@
- themes:
-        - the-authority
-        - colibri-wp
-        - library-books
-        - lawyer-gravity
-        - corporate-gravity
-plugins:
-        - wpforms-lite   
+ theme: the-authority  
