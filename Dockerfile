@@ -16,11 +16,11 @@ RUN apt-get update && apt-get install net-tools wget && \
 COPY wordpress/cloud-run-entrypoint.sh /usr/local/bin/
 
 ## Install themes and plugins
-#COPY mytheme1 /var/www/html/wp-content/themes/mytheme1/
-#COPY mytheme2 /var/www/html/wp-content/themes/mytheme2/
-#COPY myplugin1 /var/www/html/wp-content/plugins/myplugin1/
-#COPY myplugin2 /var/www/html/wp-content/plugins/myplugin2/*
-
+#ADD mytheme1 /var/www/html/wp-content/themes/mytheme1/
+#ADD mytheme2 /var/www/html/wp-content/themes/mytheme2/
+#ADD myplugin1 /var/www/html/wp-content/plugins/myplugin1/
+#ADD myplugin2 /var/www/html/wp-content/plugins/myplugin2/*
+#ADD image1 /var/www/html/wp-content/
 
 ENTRYPOINT ["cloud-run-entrypoint.sh","docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
